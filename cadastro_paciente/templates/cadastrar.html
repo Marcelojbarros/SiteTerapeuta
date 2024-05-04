@@ -7,10 +7,10 @@
   </head>
   <body>
     <h1>Cadastrar</h1>
-    <form action="{% url 'salvar' %}" method="POST">
+    <form action="{% url 'salvar' %}" method="POST" >
       {% csrf_token %}
       <h3>Nome</h3>
-      <input type="text" name="nome" />
+      <input type="text" name="nome" required />
       <h3>Data de Nascimento</h3>
       <input type="date" name="data_nascimento" />
       <h3>Sexo</h3>
